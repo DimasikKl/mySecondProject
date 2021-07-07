@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="popup.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper-popup">
+      <form class="popup-form">
+        <div class="close"></div>
+        <h2 class="sidebar-block-header">
+          <a class="sidebar-block-header-link" href="/">ваш фидбек</a>
+        </h2>
+        <div class="form-row">
+          <label class="form-label">
+            <span class="news-preview-info">
+              Как часто вы заходите на сайт?
+            </span>
+            <input
+              class="mailing-field field"
+              type="text"
+              placeholder="Почти каждый день"
+            />
+          </label>
+        </div>
+        <div class="form-row">
+          <label class="form-label">
+            <span class="news-preview-info">
+              Вы подписанны на e-mail рассылку?
+            </span>
+            <label class="radio-group">
+              <input
+                type="radio"
+                class="radio"
+                name="radio-group"
+                value="yes"
+                checked
+              />
+              <span class="radio-group-text">Да</span>
+            </label>
+            <label class="radio-group">
+              <input
+                type="radio"
+                class="radio"
+                name="radio-group"
+                value="not"
+              />
+              <span class="radio-group-text">Нет</span>
+            </label>
+          </label>
+        </div>
+
+        <div class="form-row">
+          <label class="form-label">
+            <span class="news-preview-info">
+              Раскажите, какой контент вы хотели бы видеть на нашем сайте?
+            </span>
+            <textarea
+              class="textarea"
+              placeholder="Может, больше рецептов?"
+            ></textarea>
+            <button class="button mailing-button" type="submit">
+              отправить
+            </button>
+          </label>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

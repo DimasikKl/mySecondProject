@@ -1,0 +1,142 @@
+.wrapper-popup {
+  width: 100%;
+  min-height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+}
+
+.popup-form {
+  position: relative;
+  margin-top: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 350px;
+  background-color: #fff;
+  padding: 50px 20px;
+}
+
+.sidebar-block-header {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.sidebar-block-header::after {
+  content: '';
+  display: block;
+  background: #b59f5b;
+  height: 3px;
+  width: 66px;
+  margin: 14px auto;
+}
+
+.close {
+  background-image: url('../svg/form-x.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 20px;
+  width: 20px;
+  height: 20px;
+  margin-top: -78px;
+  margin-left: 350px;
+}
+
+.sidebar-block-header-link {
+  font-size: 21px;
+  text-transform: uppercase;
+}
+
+.field {
+  margin-top: 5px;
+  max-width: 350px;
+  width: 350px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url('../svg/form-arrows.svg');
+  background-repeat: no-repeat;
+  background-position: center right 10px;
+  background-size: 10px;
+}
+
+.news-preview-info {
+  display: block;
+  margin-top: 25px;
+}
+
+.radio-group {
+  display: inline-block;
+  font-size: 15px;
+  margin-top: 5px;
+  margin-left: 15px;
+}
+
+.radio-group-text::before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  background-image: url('../svg/form-empty-circle.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 20px;
+  margin-right: 8px;
+}
+
+.radio:checked ~ .radio-group-text::before {
+  background-image: url('../svg/form-circle.svg');
+}
+
+.radio {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  width: 1px;
+}
+
+.textarea {
+  font-family: 'Open Sans';
+  src: url(../fonts/OpenSans-Regular.woff);
+  font-weight: 400;
+  font-style: normal;
+  width: 350px;
+  height: 150px;
+  border: none;
+  box-sizing: border-box;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background: #f4f7f6;
+}
+
+.mailing-button {
+  width: 350px;
+}
+
+@media (max-width: 640px) {
+  .popup-form {
+    position: relative;
+    margin-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 70px;
+    width: 300px;
+    background-color: #fff;
+    padding: 50px 20px;
+  }
+
+  .field {
+    width: 300px;
+  }
+
+  .textarea {
+    width: 300px;
+  }
+
+  .mailing-button {
+    width: 300px;
+  }
+
+  .close {
+    margin-left: 300px;
+  }
+}
